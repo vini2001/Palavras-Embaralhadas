@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Embaralhador1 implements Embaralhador {
+public class EmbaralhadorAleatorio implements Embaralhador {
 
 	@Override
 	public String embaralhar(String word) {

@@ -76,7 +76,7 @@ public class CustomFileManager {
         String ler;
         String escrever = String.format("%1$s=%2$s", categoria, valor);
         int linha = 0;
-        boolean seila = true;
+        boolean createNew = true;
         while ((ler = arqui.readLine()) != null) {
             linha++;
             int aux2 = categoria.length();
@@ -87,12 +87,12 @@ public class CustomFileManager {
                     arqui.close();
                     gravarArq.close();
                     deleteLine(caminho, nome, linha, categoria, valor);
-                    seila = false;
+                    createNew = false;
                     break;
                 }
             }
         }
-        if (seila) {
+        if (createNew) {
             gravarArq.println(escrever);
             arq.close();
             arqui.close();

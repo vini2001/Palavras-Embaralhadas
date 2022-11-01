@@ -1,6 +1,6 @@
-public class Mecanica1 extends BaseMecanica implements MecanicaDoJogo {
+public class MecanicaTreino extends BaseMecanica implements MecanicaDoJogo {
 
-	public Mecanica1(BancoDePalavras bancoDePalavras) {
+	public MecanicaTreino(BancoDePalavras bancoDePalavras) {
 		super(bancoDePalavras);
 	}
 
@@ -12,25 +12,20 @@ public class Mecanica1 extends BaseMecanica implements MecanicaDoJogo {
 
 	public void verificarFim() {
 		if (bancoDePalavras.qtd >= ArmazenarPalavras.qtd) {
-			this.status = Status.GANHOU;
+			this.status = Status.FIMTREINO;
 			onFinish.call();
-		}
-		if (this.vidas < 0) {
-			onFinish.call();
-			this.status = Status.PERDEU;
 		}
 	}
 
 	@Override
 	public void errou() {
 		this.erradas++;
-		this.vidas--;
 		verificarFim();
 	}
 
 	@Override
 	public void inicializar(Callback onFinish) {
-		this.vidas = 2;
+		this.vidas = 9999;
 		this.onFinish = onFinish;
 	}
 }

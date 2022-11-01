@@ -1,6 +1,6 @@
-public class Mecanica2 extends BaseMecanica implements MecanicaDoJogo {
+public class MecanicaFacil extends BaseMecanica implements MecanicaDoJogo {
 
-	public Mecanica2(BancoDePalavras bancoDePalavras) {
+	public MecanicaFacil(BancoDePalavras bancoDePalavras) {
 		super(bancoDePalavras);
 	}
 
@@ -30,7 +30,7 @@ public class Mecanica2 extends BaseMecanica implements MecanicaDoJogo {
 
 	@Override
 	public void inicializar(Callback onFinish) {
-		this.vidas = 0;
+		this.vidas = 2;
 		this.onFinish = onFinish;
 	}
 }

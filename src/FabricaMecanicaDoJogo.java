@@ -5,17 +5,17 @@ public class FabricaMecanicaDoJogo {
 
 		switch (op) {
 			case 1: {
-				return new Mecanica1(bancoDePalavras);
+				return new MecanicaFacil(bancoDePalavras);
 			}
 			case 2: {
-				return new Mecanica2(bancoDePalavras);
+				return new MecanicaDificil(bancoDePalavras);
 			}
 			case 3: {
-				return new Mecanica3(bancoDePalavras);
+				return new MecanicaTreino(bancoDePalavras);
 			}
 		}
 
-		return new Mecanica1(bancoDePalavras);
+		return new MecanicaFacil(bancoDePalavras);
 	}
 
 	public static String getNomeMec(int op) {

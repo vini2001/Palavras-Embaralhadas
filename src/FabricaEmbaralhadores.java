@@ -6,15 +6,15 @@ public class FabricaEmbaralhadores {
 		int valor = rand.nextInt(3);
 		switch (valor) {
 			case 0: {
-				return new Embaralhador1();
+				return new EmbaralhadorAleatorio();
 			}
 			case 1: {
-				return new Embaralhador2();
+				return new EmbaralhadorDuasPartes();
 			}
 			case 2: {
-				return new Embaralhador3();
+				return new EmbaralhadorContrario();
 			}
 		}
-		return new Embaralhador1();
+		return new EmbaralhadorAleatorio();
 	}
 }

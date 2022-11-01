@@ -8,7 +8,7 @@ public class TesteEmbaralhamento {
 	public void TesteEmbaralhamento1() { // O embaralhamento aqui é feito de forma randomica, logo, o máximo que podemos
 											// testar é se retorna uma palvra diferente da original, ou seja,
 											// embaralhada
-		Embaralhador1 emb = new Embaralhador1();
+		EmbaralhadorAleatorio emb = new EmbaralhadorAleatorio();
 		assertNotEquals(emb.embaralhar("Papai"), "Papai");
 	}
 
@@ -16,13 +16,13 @@ public class TesteEmbaralhamento {
 	public void TesteEmbaralhamento2() { // O embaralhamento aqui é feita de forma randomica, logo, o máximo que podemos
 											// testar é se retorna uma palvra diferente da original, ou seja,
 											// embaralhada
-		Embaralhador2 emb = new Embaralhador2();
+		EmbaralhadorDuasPartes emb = new EmbaralhadorDuasPartes();
 		assertNotEquals(emb.embaralhar("Mamãe"), "Mamãe");
 	}
 
 	@Test
 	public void TesteEmbaralhamento3() {
-		Embaralhador3 emb = new Embaralhador3();
+		EmbaralhadorContrario emb = new EmbaralhadorContrario();
 		assertEquals(emb.embaralhar("MousePad"), "daPesuoM");
 		assertEquals(emb.embaralhar("Vinícius"), "suicíniV");
 	}

@@ -1,4 +1,4 @@
-public class Embaralhador3 implements Embaralhador {
+public class EmbaralhadorContrario implements Embaralhador {
 
 	@Override
 	public String embaralhar(String word) {
