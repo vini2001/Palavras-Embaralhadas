@@ -1,0 +1,72 @@
+================================================
+  NLOC    CCN   token  PARAM  length  location  
+------------------------------------------------
+      15      2    106      0      15 BancoDePalavras::palavra@8-22@./BancoDePalavras.java
+      47      5    373      0      50 ArmazenarPalavras::armazenar@7-56@./ArmazenarPalavras.java
+       3      1     12      1       3 Mecanica2::Mecanica2@3-5@./Mecanica2.java
+       4      1     14      0       4 Mecanica2::acertou@8-11@./Mecanica2.java
+      10      3     49      0      10 Mecanica2::verificarFim@13-22@./Mecanica2.java
+       5      1     19      0       5 Mecanica2::errou@25-29@./Mecanica2.java
+       4      1     19      1       4 Mecanica2::inicializar@32-35@./Mecanica2.java
+       3      1     12      1       3 Mecanica3::Mecanica3@3-5@./Mecanica3.java
+       4      1     14      0       4 Mecanica3::acertou@8-11@./Mecanica3.java
+       6      2     27      0       6 Mecanica3::verificarFim@13-18@./Mecanica3.java
+       4      1     14      0       4 Mecanica3::errou@21-24@./Mecanica3.java
+       4      1     19      1       4 Mecanica3::inicializar@27-30@./Mecanica3.java
+      17      4    118      1      17 Embaralhador1::embaralhar@6-22@./Embaralhador1.java
+       8      2     54      0       8 Diretorio::dir@4-11@./Diretorio.java
+       3      1     13      1       3 BaseMecanica::BaseMecanica@9-11@./BaseMecanica.java
+      12      4     34      0      12 BaseMecanica::msgFim@13-24@./BaseMecanica.java
+       3      1     10      0       3 BaseMecanica::getCorretas@26-28@./BaseMecanica.java
+       3      1     10      0       3 BaseMecanica::getErradas@30-32@./BaseMecanica.java
+       3      1     10      0       3 BaseMecanica::getTotalTentativas@34-36@./BaseMecanica.java
+       9      2     65      0       9 BaseMecanica::getPalavraDoEmbaralhador@44-52@./BaseMecanica.java
+       3      1     28      1       3 BaseMecanica::removerAcentos@54-56@./BaseMecanica.java
+      10      2     59      1      10 BaseMecanica::Adivinhou@58-67@./BaseMecanica.java
+       3      1     10      0       3 BaseMecanica::getVidas@69-71@./BaseMecanica.java
+      16      4     68      0      16 FabricaEmbaralhadores::getEmbaralhador@4-19@./FabricaEmbaralhadores.java
+       4      1     26      1       4 CustomFileManager::create@10-13@./CustomFileManager.java
+      15      3    120      1      15 CustomFileManager::exists@15-29@./CustomFileManager.java
+      33      6    255      5      37 CustomFileManager::deleteLine@31-67@./CustomFileManager.java
+      33      5    246      3      34 CustomFileManager::stringSet@69-102@./CustomFileManager.java
+      17      4    121      2      17 CustomFileManager::readString@104-120@./CustomFileManager.java
+      53      9    388      0      60 Principal::iniciar@9-68@./Principal.java
+       8      2     42      1       8 Principal::main@70-77@./Principal.java
+       7      1     50      0       7 Principal::opcoes@79-85@./Principal.java
+      15      4     64      1      18 FabricaMecanicaDoJogo::getMecanica@2-19@./FabricaMecanicaDoJogo.java
+      16      4     44      1      16 FabricaMecanicaDoJogo::getNomeMec@21-36@./FabricaMecanicaDoJogo.java
+      29      7    217      1      30 Embaralhador2::embaralhar@6-35@./Embaralhador2.java
+       7      2     60      1       7 Embaralhador3::embaralhar@4-10@./Embaralhador3.java
+       3      1     12      1       3 Mecanica1::Mecanica1@3-5@./Mecanica1.java
+       4      1     14      0       4 Mecanica1::acertou@8-11@./Mecanica1.java
+      10      3     49      0      10 Mecanica1::verificarFim@13-22@./Mecanica1.java
+       5      1     19      0       5 Mecanica1::errou@25-29@./Mecanica1.java
+       4      1     19      1       4 Mecanica1::inicializar@32-35@./Mecanica1.java
+17 file analyzed.
+==============================================================
+NLOC    Avg.NLOC  AvgCCN  Avg.token  function_cnt    file
+--------------------------------------------------------------
+     21      15.0     2.0      106.0         1     ./BancoDePalavras.java
+     52      47.0     5.0      373.0         1     ./ArmazenarPalavras.java
+     31       5.2     1.4       22.6         5     ./Mecanica2.java
+     26       4.2     1.2       17.2         5     ./Mecanica3.java
+     21      17.0     4.0      118.0         1     ./Embaralhador1.java
+     11       8.0     2.0       54.0         1     ./Diretorio.java
+     59       5.4     1.6       26.6         9     ./BaseMecanica.java
+     19      16.0     4.0       68.0         1     ./FabricaEmbaralhadores.java
+    110      20.4     3.8      153.6         5     ./CustomFileManager.java
+      3       0.0     0.0        0.0         0     ./Callback.java
+     74      22.7     4.0      160.0         3     ./Principal.java
+     33      15.5     4.0       54.0         2     ./FabricaMecanicaDoJogo.java
+     15       0.0     0.0        0.0         0     ./MecanicaDoJogo.java
+     33      29.0     7.0      217.0         1     ./Embaralhador2.java
+      3       0.0     0.0        0.0         0     ./Embaralhador.java
+     10       7.0     2.0       60.0         1     ./Embaralhador3.java
+     31       5.2     1.4       22.6         5     ./Mecanica1.java
+
+===============================================================================================================
+No thresholds exceeded (cyclomatic_complexity > 15 or length > 1000 or nloc > 1000000 or parameter_count > 100)
+==========================================================================================
+Total nloc   Avg.NLOC  AvgCCN  Avg.token   Fun Cnt  Warning cnt   Fun Rt   nloc Rt
+------------------------------------------------------------------------------------------
+       552      11.3     2.4       70.8       41            0      0.00    0.00
