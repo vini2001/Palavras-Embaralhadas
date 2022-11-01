@@ -11,7 +11,7 @@ public class Mecanica3 extends BaseMecanica implements MecanicaDoJogo {
 	}
 
 	public void verificarFim() {
-		if (bancoDePalavras.qtd >= 20) {
+		if (bancoDePalavras.qtd >= ArmazenarPalavras.qtd) {
 			this.status = Status.FIMTREINO;
 			onFinish.call();
 		}
