@@ -28,7 +28,7 @@ public class CustomFileManager {
         return bool;
     }
 
-    public static void deleteLine(String caminho, String nome, int linha, String cat, String valor) throws IOException {
+    public static void deletarLinha(String caminho, String nome, int linha, String cat, String valor) throws IOException {
         String Salvar = String.format("%1$s/%2$s", caminho, nome);
         String linhas[] = new String[10000];
         BufferedReader arqui = new BufferedReader(new FileReader(Salvar));
@@ -40,6 +40,14 @@ public class CustomFileManager {
         }
         arqui.close();
         //////
+        deletarArquivos(caminho, nome);
+        /////
+        escreverNoArquivo(Salvar, aux, linha, linhas, cat, valor);
+
+    }
+
+    private static void deletarArquivos(String caminho, String nome) {
+
         File pasta = new File(caminho);
         File[] arquivos = pasta.listFiles();
         for (int i = 0; i < arquivos.length; i++) {
@@ -48,11 +56,16 @@ public class CustomFileManager {
                 break;
             }
         }
-        /////
+
+    }
+
+
+    private static void escreverNoArquivo(String Salvar, int size, int linha, String[] linhas, String cat, String valor) throws IOException {
+
         FileWriter arq = new FileWriter(Salvar, true);
         PrintWriter gravarArq = new PrintWriter(arq);
         String escrever;
-        for (int i = 1; i <= aux; i++) {
+        for (int i = 1; i <= size; i++) {
             if (i == linha) {
                 escrever = String.format("%1$s=%2$s", cat, valor);
             } else {
@@ -63,7 +76,6 @@ public class CustomFileManager {
 
         arq.close();
         gravarArq.close();
-
     }
 
     public static void stringSet(String ArquivoComDiretorio, String categoria, String valor) throws IOException {
@@ -86,7 +98,7 @@ public class CustomFileManager {
                     arq.close();
                     arqui.close();
                     gravarArq.close();
-                    deleteLine(caminho, nome, linha, categoria, valor);
+                    deletarLinha(caminho, nome, linha, categoria, valor);
                     createNew = false;
                     break;
                 }
