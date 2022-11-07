@@ -1,36 +1,35 @@
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Random;
+import java.util.List;
 
 public class EmbaralhadorDuasPartes implements Embaralhador {
 
+	Random sorteador = new Random();
+
 	@Override
 	public String embaralhar(String word) {
-		int tamanho = word.length();
-		int part1 = tamanho / 2;
-		int part2 = tamanho - part1;
 
-		boolean jaSort[] = new boolean[tamanho];
-		for (int i = 0; i < tamanho; i++)
-			jaSort[i] = false;
-		Random sorteador = new Random();
 		String resultado = "";
-		do {
-			for (int i = 0; i < part1; i++) {
-				int sort = 0;
-				do {
-					sort = sorteador.nextInt(part1);
-				} while (jaSort[sort]);
-				resultado += Character.toString(word.charAt(sort));
-				jaSort[sort] = true;
-			}
-			for (int i = part1; i < tamanho; i++) {
-				int sort = 0;
-				do {
-					sort = sorteador.nextInt(part2) + part1;
-				} while (jaSort[sort]);
-				resultado += Character.toString(word.charAt(sort));
-				jaSort[sort] = true;
-			}
-		} while (resultado.equals(word));
+
+		String parte1 = word.substring(0, word.length() / 2);
+		resultado += embaralharParte(parte1);
+		String parte2 = word.substring(word.length() / 2);
+		resultado += embaralharParte(parte2);
+
 		return resultado;
+	}
+
+	private String embaralharParte(String parte) {
+
+		List<String> listaLetras = Arrays.asList(parte.split(""));
+		Collections.shuffle(listaLetras);
+		String resultado = "";
+
+		for (String letra : listaLetras) {
+			resultado += letra;
+		}
+
+		return resultado;
 	}
 }
