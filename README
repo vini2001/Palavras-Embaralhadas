@@ -1,0 +1,13 @@
+Integrantes: Vinícius Assis Neves, Otávio de Meira Lima
+
+O sistema implementado durante o projeto é um jogo onde o usuário recebe palavras pelo terminal e tenta adivinhar qual é a palavra embaralhada. O sistema possui 3 níveis de dificuldade, sendo elas fácil, difícil e modo treino. Cada dificuldade varia principalmente na quantidade de vidas que o jogador possui.A cada erro, o jogador perde uma vida. Caso chegue em 0, o jogador perde e o jogo se encerra.
+
+Existem 3 formas de embaralhar as palavras. Elas podem estar embaralhadas de trás para frente, de forma aleatória ou de forma aleatória dividida em duas partes. A forma com que as palavras são embaralhadas aumentam a dificuldade do jogo e não são selecionáveis pelo jogador. 
+
+
+O sistema foi desenvolvido em Java, devido à sua facilidade em criação de classes e sua comunicação. Não foram utilizados frameworks, portanto sua utilização é diretamente pelo terminal da máquina do usuário.
+
+Para jogar, é preciso compilar os arquivos e rodar o arquivo principal com os seguintes comandos:
+
+"javac Principal.java"
+"java Principal"
