@@ -56,7 +56,7 @@ public class EmbaralhamentoTest extends TestCase {
 		assertEquals(emb.embaralhar("Casa"), "asac");
 		assertEquals(emb.embaralhar("Tapete"), "etepat");
 		assertEquals(emb.embaralhar("Cadeira"), "ariedac");
-		assertEquals(emb.embaralhar("Luminária"), "airánimul");
+		assertEquals(emb.embaralhar("Luminaria"), "airanimul");
 		assertEquals(emb.embaralhar("Computador"), "rodatupmoc");
 		assertEquals(emb.embaralhar("Teclado"), "odalcet");
 		assertEquals(emb.embaralhar("Mouse"), "esuom");
