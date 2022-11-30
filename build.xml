@@ -68,9 +68,9 @@
   </target>
 
   <target name="test" description="run all junit tests" depends="compile-test">
-        <junit printsummary="yes" haltonfailure="yes">
+        <junit printsummary="yes" haltonfailure="yes" showOutput="yes">
           <classpath refid="classpath.test" />
-            <formatter type="xml"/>
+            <formatter type="plain" usefile="false" />
             <test name="EmbaralhamentoTest" />
             
         </junit>        
@@ -79,7 +79,7 @@
   <target name="run-test" depends="test">
     <delete verbose="${TALK}">
       <fileset dir="${tst-dir}" includes="**/*.class" />
-      <fileset dir="" includes="TEST-ProjectTest.xml" />
+      <fileset dir="" includes="TEST-EmbaralhamentoTest.xml" />
     </delete>
   </target>
 
