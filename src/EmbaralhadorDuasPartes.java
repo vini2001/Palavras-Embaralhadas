@@ -30,6 +30,6 @@ public class EmbaralhadorDuasPartes implements Embaralhador {
 			resultado += letra;
 		}
 
-		return resultado;
+		return resultado;
 	}
 }

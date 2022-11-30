@@ -1,3 +1,5 @@
 .DS_Store
 *.class
 bin/*
+report.html
+TEST-*.xml
