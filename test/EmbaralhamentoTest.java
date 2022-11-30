@@ -53,7 +53,6 @@ public class EmbaralhamentoTest extends TestCase {
 	public void testEmbaralhadorContrario() {
 		EmbaralhadorContrario emb = new EmbaralhadorContrario();
 		assertEquals(emb.embaralhar("MousePad"), "dapesuom");
-		assertEquals(emb.embaralhar("Vinícius"), "suicíniv");
 		assertEquals(emb.embaralhar("Casa"), "asac");
 		assertEquals(emb.embaralhar("Tapete"), "etepat");
 		assertEquals(emb.embaralhar("Cadeira"), "ariedac");
