@@ -66,7 +66,7 @@ public class Principal {
 
 	private static void calcularResposta(MecanicaDoJogo mec, String resp) {
 
-		if (mec.Adivinhou(resp)) {
+		if (mec.adivinhou(resp)) {
 			System.out.print("\nAcertou!");
 			System.out.print(" Digite qualquer coisa para continuar: ");
 			tec.next();

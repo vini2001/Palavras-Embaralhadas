@@ -1,5 +1,4 @@
 import static org.junit.Assert.assertNotEquals;
-
 import java.util.Arrays;
 
 import org.junit.*;
@@ -74,34 +73,5 @@ public class EmbaralhamentoTest extends TestCase {
 		}
 	}
 
-	@Test
-	public void testFabricaMecanica() {
-		MecanicaDoJogo facil = FabricaMecanicaDoJogo.getMecanica(1);
-		assertEquals(FabricaMecanicaDoJogo.getNomeMec(1), "fácil");
-		assertTrue(facil instanceof MecanicaDoJogo);
-
-		MecanicaDoJogo medio = FabricaMecanicaDoJogo.getMecanica(2);
-		assertEquals(FabricaMecanicaDoJogo.getNomeMec(2), "difícil");
-		assertTrue(medio instanceof MecanicaDoJogo);
-
-		MecanicaDoJogo dificil = FabricaMecanicaDoJogo.getMecanica(3);
-		assertEquals(FabricaMecanicaDoJogo.getNomeMec(3), "treino");
-		assertTrue(dificil instanceof MecanicaDoJogo);
-	}
-
-	@Test 
-	public void testMecanicaVidas() {
-		MecanicaDoJogo facil = FabricaMecanicaDoJogo.getMecanica(1);
-		facil.inicializar(null);
-		assertEquals(facil.getVidas(), 2);
-
-		MecanicaDoJogo dificil = FabricaMecanicaDoJogo.getMecanica(2);
-		dificil.inicializar(null);
-		assertEquals(dificil.getVidas(), 0);
-
-		MecanicaDoJogo treino = FabricaMecanicaDoJogo.getMecanica(3);
-		treino.inicializar(null);
-		assertTrue(treino.getVidas() > 1000);
-	}
-
+	
 }

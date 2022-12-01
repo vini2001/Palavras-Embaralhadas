@@ -72,6 +72,9 @@
           <classpath refid="classpath.test" />
             <formatter type="plain" usefile="false" />
             <test name="EmbaralhamentoTest" />
+            <test name="MecanicasTest" />
+            <test name="DiretorioTest" />
+            <test name="GerenciadorDeArquivoTest" />
             
         </junit>        
   </target>
@@ -80,6 +83,9 @@
     <delete verbose="${TALK}">
       <fileset dir="${tst-dir}" includes="**/*.class" />
       <fileset dir="" includes="TEST-EmbaralhamentoTest.xml" />
+      <fileset dir="" includes="TEST-MecanicasTest.xml" />
+      <fileset dir="" includes="TEST-DiretorioTest.xml" />
+      <fileset dir="" includes="TEST-GerenciadorDeArquivoTest.xml" />
     </delete>
   </target>
 

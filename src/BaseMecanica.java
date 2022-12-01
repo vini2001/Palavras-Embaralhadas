@@ -14,6 +14,11 @@ public abstract class BaseMecanica {
 		this.bancoDePalavras = bancoDePalavras;
 	}
 
+	public void inicializar(Callback onFinish) {
+		this.onFinish = onFinish;
+		status = Status.ANDAMENTO;
+	}
+
 	public String msgFim() {
 		switch (status) {
 			case GANHOU:
@@ -59,7 +64,7 @@ public abstract class BaseMecanica {
 		return Normalizer.normalize(str, Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "");
 	}
 
-	public boolean Adivinhou(String resp) {
+	public boolean adivinhou(String resp) {
 		resp = removerAcentos(resp);
 		if (resp.toLowerCase().equals(removerAcentos(this.wordAt.toLowerCase()))) {
 			this.acertou();
@@ -72,5 +77,9 @@ public abstract class BaseMecanica {
 
 	public int getVidas() {
 		return this.vidas;
+	}
+
+	public Status getStatus() {
+		return this.status;
 	}
 }

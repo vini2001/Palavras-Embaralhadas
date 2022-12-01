@@ -26,6 +26,6 @@ public class MecanicaTreino extends BaseMecanica implements MecanicaDoJogo {
 	@Override
 	public void inicializar(Callback onFinish) {
 		this.vidas = 9999;
-		this.onFinish = onFinish;
+		super.inicializar(onFinish);
 	}
 }

@@ -19,9 +19,11 @@ public interface MecanicaDoJogo {
 
 	public String removerAcentos(String str);
 
-	public boolean Adivinhou(String resp);
+	public boolean adivinhou(String resp);
 
 	public int getVidas();
 
 	public String msgFim();
+
+	public Status getStatus();
 }

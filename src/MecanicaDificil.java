@@ -31,6 +31,6 @@ public class MecanicaDificil extends BaseMecanica implements MecanicaDoJogo {
 	@Override
 	public void inicializar(Callback onFinish) {
 		this.vidas = 0;
-		this.onFinish = onFinish;
+		super.inicializar(onFinish);
 	}
 }
