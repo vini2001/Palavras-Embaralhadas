@@ -66,6 +66,7 @@ public class MecanicasTest extends TestCase {
 	public void testRemoverAcentos() {
 
 		MecanicaDoJogo facil = FabricaMecanicaDoJogo.getMecanica(1);
+		String palavra = "árvore";
 
 		String palavraSemAcentos = facil.removerAcentos(palavra);
 
