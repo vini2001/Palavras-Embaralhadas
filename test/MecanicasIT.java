@@ -64,5 +64,27 @@ public class MecanicasTest extends TestCase{
 		}
 	}
 
+    private String getPalavraMecanica(MecanicaDoJogo mec) {
+		try {
+			String palavra = mec.getPalavraDoEmbaralhador();
+			return palavra;
+		}catch(Exception e) {
+			fail("Erro ao retornar palavra");
+		}
+		return null;
+	}
+
+	private boolean tentarTodasPalavrasIniciais(MecanicaDoJogo mec) {
+		String[] palavrasIniciais = ArmazenarPalavras.palavrasIniciais;
+
+		boolean adivinhou = false;
+		for(int i = 0; i < palavrasIniciais.length; i++) {
+			if(mec.adivinhou(palavrasIniciais[i])) {
+				adivinhou = true;
+			}
+		}
+		return adivinhou;
+	}
+
 
 }

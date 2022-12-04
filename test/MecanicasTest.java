@@ -81,7 +81,6 @@ public class MecanicasTest extends TestCase {
 
 		assertEquals("arvore", palavraSemAcentos);
 
-		
 	}
 
 	@Test
