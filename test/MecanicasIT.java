@@ -1,7 +1,7 @@
 import org.junit.*;
 import junit.framework.TestCase;
 
-public class MecanicasTest extends TestCase{
+public class MecanicasIT extends TestCase{
 
 
     @Test
