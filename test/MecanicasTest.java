@@ -101,7 +101,7 @@ public class MecanicasTest extends TestCase {
 			fail("Erro ao retornar palavra");
 		}
 		return null;
-	}
+	} 
 
 	private boolean tentarTodasPalavrasIniciais(MecanicaDoJogo mec) {
 		String[] palavrasIniciais = ArmazenarPalavras.palavrasIniciais;
