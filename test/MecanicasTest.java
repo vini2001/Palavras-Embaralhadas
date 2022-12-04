@@ -97,7 +97,7 @@ public class MecanicasTest extends TestCase {
 
 		String palavraSemAcentos = facil.removerAcentos(palavra);
 
-		assertEquals("arvore", palavraSemAcentos);
+		assertEquals("Arvore", palavraSemAcentos);
 
 	}
 
