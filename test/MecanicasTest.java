@@ -90,18 +90,6 @@ public class MecanicasTest extends TestCase {
 	}
 
 	@Test
-	public void testRemoverAcentos() {
-
-		MecanicaDoJogo facil = FabricaMecanicaDoJogo.getMecanica(1);
-		String palavra = "árvore";
-
-		String palavraSemAcentos = facil.removerAcentos(palavra);
-
-		assertEquals("Arvore", palavraSemAcentos);
-
-	}
-
-	@Test
 	public void testPalavraRetornadaPorMecanicaPodeSerDesembaralhadaPorUmaDasPalavrasPadroes() {
 		MecanicaDoJogo mec = FabricaMecanicaDoJogo.getMecanica(3);
 		mec.inicializar(null);
