@@ -16,7 +16,7 @@ public class MecanicasTest extends TestCase {
 	}
 
 	@Test
-	public void testFabricaMecanicaFacil() {
+	void testFabricaMecanicaFacil() {
 
 		MecanicaDoJogo facil = FabricaMecanicaDoJogo.getMecanica(1);
 		
@@ -26,7 +26,7 @@ public class MecanicasTest extends TestCase {
 	}
 
 	@Test
-	public void testQuantidadeVidasaMecanicaFacil() {
+	void testQuantidadeVidasaMecanicaFacil() {
 
 		MecanicaDoJogo facil = FabricaMecanicaDoJogo.getMecanica(1);
 		
@@ -76,7 +76,7 @@ public class MecanicasTest extends TestCase {
 	}
 
 	@Test
-	public void testMecanicaRetornaPalavra(){
+	void testMecanicaRetornaPalavra(){
 		
 		MecanicaDoJogo facil = FabricaMecanicaDoJogo.getMecanica(1);
 		try {
@@ -90,7 +90,7 @@ public class MecanicasTest extends TestCase {
 	}
 
 	// @Test
-	// public void testRemoverAcentos() {
+	// void testRemoverAcentos() {
 
 	// 	MecanicaDoJogo facil = FabricaMecanicaDoJogo.getMecanica(1);
 	// 	String palavra = "árvore";
