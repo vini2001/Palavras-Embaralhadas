@@ -18,13 +18,10 @@ public class MecanicasTest extends TestCase {
 	@Test
 	public void testFabricaMecanicaFacil() {
 
-		//arrange
 		MecanicaDoJogo facil = FabricaMecanicaDoJogo.getMecanica(1);
 		
-		//act
 		facil.inicializar(null);
 
-		//assert
 		assertEquals(FabricaMecanicaDoJogo.getNomeMec(1), "fácil");
 		assertEquals(facil.getVidas(), 2);
 	}
@@ -32,13 +29,10 @@ public class MecanicasTest extends TestCase {
 	@Test
 	void testFabricaMecanicaDificil() {
 
-		//arrange
 		MecanicaDoJogo dificil = FabricaMecanicaDoJogo.getMecanica(2);
 
-		//act
 		dificil.inicializar(null);
 
-		//assert
 		assertEquals(FabricaMecanicaDoJogo.getNomeMec(2), "difícil");
 		assertEquals(dificil.getVidas(), 0);
 	}
@@ -46,13 +40,10 @@ public class MecanicasTest extends TestCase {
 	@Test
 	void testMecanicaTreino() {
 
-		//arrange
 		MecanicaDoJogo treino = FabricaMecanicaDoJogo.getMecanica(3);
 
-		//act
 		treino.inicializar(null);
 
-		//assert
 		assertEquals(FabricaMecanicaDoJogo.getNomeMec(3), "treino");
 		assertTrue(treino.getVidas() > 1000);
 	}
@@ -74,10 +65,9 @@ public class MecanicasTest extends TestCase {
 	@Test
 	public void testRemoverAcentos() {
 
-		BaseMecanica baseMecanica = new BaseMecanica(new BancoDePalavras());
 		String palavra = "árvore";
 
-		String palavraSemAcentos = baseMecanica.removerAcentos(palavra);
+		String palavraSemAcentos = BaseMecanica.removerAcentos(palavra);
 
 		assertEquals("arvore", palavraSemAcentos);
 
