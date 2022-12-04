@@ -23,17 +23,35 @@ public class MecanicasTest extends TestCase {
 		facil.inicializar(null);
 
 		assertEquals(FabricaMecanicaDoJogo.getNomeMec(1), "fácil");
+	}
+
+	@Test
+	public void testQuantidadeVidasaMecanicaFacil() {
+
+		MecanicaDoJogo facil = FabricaMecanicaDoJogo.getMecanica(1);
+		
+		facil.inicializar(null);
+
 		assertEquals(facil.getVidas(), 2);
 	}
 
 	@Test
-	void testFabricaMecanicaDificil() {
+	void testMecanicaDificil() {
 
 		MecanicaDoJogo dificil = FabricaMecanicaDoJogo.getMecanica(2);
 
 		dificil.inicializar(null);
 
 		assertEquals(FabricaMecanicaDoJogo.getNomeMec(2), "difícil");
+	}
+
+	@Test
+	void testQuantidadeVidasMecanicaDificil() {
+
+		MecanicaDoJogo dificil = FabricaMecanicaDoJogo.getMecanica(2);
+
+		dificil.inicializar(null);
+
 		assertEquals(dificil.getVidas(), 0);
 	}
 
@@ -45,6 +63,15 @@ public class MecanicasTest extends TestCase {
 		treino.inicializar(null);
 
 		assertEquals(FabricaMecanicaDoJogo.getNomeMec(3), "treino");
+	}
+
+	@Test
+	void testQuantidadeVidasMecanicaTreino() {
+
+		MecanicaDoJogo treino = FabricaMecanicaDoJogo.getMecanica(3);
+
+		treino.inicializar(null);
+
 		assertTrue(treino.getVidas() > 1000);
 	}
 
@@ -62,17 +89,17 @@ public class MecanicasTest extends TestCase {
 		}
 	}
 
-	@Test
-	public void testRemoverAcentos() {
+	// @Test
+	// public void testRemoverAcentos() {
 
-		MecanicaDoJogo facil = FabricaMecanicaDoJogo.getMecanica(1);
-		String palavra = "árvore";
+	// 	MecanicaDoJogo facil = FabricaMecanicaDoJogo.getMecanica(1);
+	// 	String palavra = "árvore";
 
-		String palavraSemAcentos = facil.removerAcentos(palavra);
+	// 	String palavraSemAcentos = facil.removerAcentos(palavra);
 
-		assertEquals("arvore", palavraSemAcentos);
+	// 	assertEquals("arvore", palavraSemAcentos);
 
-	}
+	// }
 
 	@Test
 	public void testPalavraRetornadaPorMecanicaPodeSerDesembaralhadaPorUmaDasPalavrasPadroes() {
