@@ -16,7 +16,7 @@ public class MecanicasTest extends TestCase {
 	}
 
 	@Test
-	void testFabricaMecanicaFacil() {
+	public void testFabricaMecanicaFacil() {
 
 		MecanicaDoJogo facil = FabricaMecanicaDoJogo.getMecanica(1);
 		
@@ -26,7 +26,7 @@ public class MecanicasTest extends TestCase {
 	}
 
 	@Test
-	void testQuantidadeVidasaMecanicaFacil() {
+	public void testQuantidadeVidasaMecanicaFacil() {
 
 		MecanicaDoJogo facil = FabricaMecanicaDoJogo.getMecanica(1);
 		
@@ -36,7 +36,7 @@ public class MecanicasTest extends TestCase {
 	}
 
 	@Test
-	void testMecanicaDificil() {
+	public void testMecanicaDificil() {
 
 		MecanicaDoJogo dificil = FabricaMecanicaDoJogo.getMecanica(2);
 
@@ -46,7 +46,7 @@ public class MecanicasTest extends TestCase {
 	}
 
 	@Test
-	void testQuantidadeVidasMecanicaDificil() {
+	public void testQuantidadeVidasMecanicaDificil() {
 
 		MecanicaDoJogo dificil = FabricaMecanicaDoJogo.getMecanica(2);
 
@@ -56,7 +56,7 @@ public class MecanicasTest extends TestCase {
 	}
 
 	@Test
-	void testMecanicaTreino() {
+	public void testMecanicaTreino() {
 
 		MecanicaDoJogo treino = FabricaMecanicaDoJogo.getMecanica(3);
 
@@ -66,7 +66,7 @@ public class MecanicasTest extends TestCase {
 	}
 
 	@Test
-	void testQuantidadeVidasMecanicaTreino() {
+	public void testQuantidadeVidasMecanicaTreino() {
 
 		MecanicaDoJogo treino = FabricaMecanicaDoJogo.getMecanica(3);
 
@@ -76,7 +76,7 @@ public class MecanicasTest extends TestCase {
 	}
 
 	@Test
-	void testMecanicaRetornaPalavra(){
+	public void testMecanicaRetornaPalavra(){
 		
 		MecanicaDoJogo facil = FabricaMecanicaDoJogo.getMecanica(1);
 		try {
